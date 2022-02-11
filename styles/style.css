@@ -246,16 +246,11 @@ footer{
     }
 
     main form {
-        width: 90%;
+        width: 95%;
     }
 
     .lifestyle {
         display: none;
-    }
-
-    .footerlinks {
-        position: absolute;
-        bottom: 0;
     }
 
     .mob-show {
@@ -272,7 +267,7 @@ footer{
 
     .footerlinks {
         position: absolute;
-        bottom: 10px;
+        bottom: 0;
         width: 100%;
         background-color: #EEEEEE;
         padding: 10px;
