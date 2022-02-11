@@ -1,0 +1,281 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: black;
+    text-decoration: none;
+}
+
+body {
+    width: 100%;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 14px;
+}
+
+.flex-col, .flex-row {
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.flex-row {
+    flex-direction: row;
+}
+
+.mail-icon {
+    width: 19px;
+    vertical-align: middle;
+    filter: contrast(110%);
+}
+
+#main-logo {
+    width: 135px;
+}
+
+header .nav {
+    justify-content: flex-end;
+    position: fixed;
+    top: 25px;
+    right: 200px;
+    background-color: white;
+}
+
+.nav a {
+    padding: 0 15px;
+    font-size: 13px;
+}
+
+main {
+    width: 100%;
+    max-width: 630px;
+    margin: 0 auto;
+    margin-top: 115px;
+}
+
+main .flex-col{
+    width: 100%;
+}
+
+form {
+    width: 100%;
+    justify-content: space-between;
+    margin-top: 30px;
+}
+
+#inputbox {
+    width: 90%;
+    height: 50px;
+    padding: 5px 10px; 
+    font-size: 16px;
+    outline:none;
+    border: 1px solid blue;
+}
+
+/* #inputbox::after{
+    content: "";
+    display: inline-block;
+    background-image: url(https://s.yimg.com/pv/static/img/voiceSearchSFP1x-1627626333804.min.png);
+    background-size: 30px 30px;
+    background-repeat: no-repeat;
+    width: 40px;
+    height: 40px;
+
+} */
+
+#inputbox:hover,
+#inputbox:focus {
+    box-shadow: 0.5px 0.5px 2px rgba(4, 4, 255, 0.548);
+    border: 1px solid rgb(0, 0, 206);
+}
+
+#search-icon {
+    border: 0;
+    background-color: #F09600;
+    height: 50px;
+    width: 10%;
+    border-radius: 0 5px 5px 0;
+    background-image: url(../images/search.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 19px 19px;
+    filter:invert();
+    margin-left: -2px;
+}
+
+.feeds {
+    margin: 70px auto;
+    align-items: baseline;
+}
+
+.feeds figure:not(.covid) {
+    text-align: center;
+}
+
+.feeds {
+    height: 50px;
+}
+
+.feeds figure {
+    margin: 0 10px;
+}
+
+.feeds img {
+    width: 100%;
+    max-width: 50px;
+}
+
+.feeds img:not(.covid img) {
+    background-color: #4D4D50;
+    padding: 10px;
+    border-radius: 50%;
+}
+
+.covid {
+    background-color: #4D4D50;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 130px;
+    height: 50px;
+    border-radius: 45px;
+    align-self: flex-start;
+}
+
+.covid a {
+    padding: 5px;
+    margin: 0 5px;
+}
+
+.covid figcaption {
+    color: white;
+}
+
+.notice p {
+    width: 80%;
+    text-align: center;
+    font-size: 1.05rem;
+    line-height: 1.2;
+    background-color: #FAF9FE;
+    padding: 15px;
+}
+
+.notice a {
+    color: #6B5ABD;
+    font-weight: bold;
+}
+
+.notice a:hover {
+    text-decoration: underline;
+}
+
+.trending {
+    margin: 50px auto;
+}
+
+.trending h2{
+    font-weight: bold;
+}
+
+.trending ol {
+    list-style-type: decimal;
+    list-style-position: inside;
+    width: 80%;
+}
+
+.trending li {
+    font-size: 1rem;
+    padding: 15px;
+    border-bottom: 1px solid gray;
+    font-weight: bold;
+}
+
+.trending li:hover{
+    color: #6B5ABD;
+    fill: currentColor;
+
+}
+
+.trending a{
+    color: #6B5ABD;
+    font-weight: normal ;
+}
+
+.trending svg {
+    float: right;
+}
+
+footer{
+    margin: ;
+}
+
+.footerlinks {
+    margin: 25px auto;
+}
+
+.footerlinks li {
+    margin: 0 10px;
+}
+
+.footerlinks .updated::after {
+    content: " (Updated)";
+    font-weight: bold;
+    color: blue;
+}
+
+.footerlinks a {
+    font-size: 11px;
+    color: blue;
+}
+
+.footerlinks a:hover{
+    text-decoration: underline;
+}
+
+.mob-show {
+    display: none;
+}
+
+@media (max-width: 768px){
+    .trending {
+        display: none;
+    }
+
+    header .nav {
+        right: 10px;
+    }
+
+    main form {
+        width: 90%;
+    }
+
+    .lifestyle {
+        display: none;
+    }
+
+    .footerlinks {
+        position: absolute;
+        bottom: 0;
+    }
+
+    .mob-show {
+        display: block;
+    }
+
+    .mob-hide {
+        display: none;
+    }
+
+    .mob-show a, li.help a {
+        color: gray;
+    }
+
+    .footerlinks {
+        position: absolute;
+        bottom: 10px;
+        width: 100%;
+        background-color: #EEEEEE;
+        padding: 10px;
+        justify-content: flex-start;
+    }
+}
