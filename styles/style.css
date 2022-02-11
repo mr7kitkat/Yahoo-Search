@@ -273,4 +273,8 @@ footer{
         padding: 10px;
         justify-content: flex-start;
     }
+    
+    body {
+        height: 100vh;
+    }
 }
